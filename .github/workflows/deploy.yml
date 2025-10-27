@@ -20,7 +20,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: /proyectos/
           exclude: |
-            public/**
             */.git
             */node_modules/*
             */docker/*
@@ -34,4 +33,4 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /
+          server-dir: /proyectos/
