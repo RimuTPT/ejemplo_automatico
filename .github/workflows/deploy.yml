@@ -1,4 +1,4 @@
-name:  Deploy Laravel to HostGator (separated public)
+name:  waza
 
 on:
   push:
