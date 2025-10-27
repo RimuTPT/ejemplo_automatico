@@ -19,17 +19,3 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: /proyectos/
-          exclude: |
-            */.git
-            */node_modules/*
-            */docker/*
-            */.github/*
-            */tests/*
-            **/.env.example
-            **/README.md
-      - name: Deploy public assets
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
